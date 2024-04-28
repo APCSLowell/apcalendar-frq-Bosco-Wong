@@ -12,12 +12,15 @@ public class APCalendar
    */
   public static int numberOfLeapYears(int year1, int year2)
   { 
+    int temp = 0;
     for(int x= year1; x<= year2; x++){ //watch out for the greater equals
     int count = 0;
-    if(isLeapYear(x) == true)
+    if(isLeapYear(x) == true){
       count++;
+      temp = count;
     }
-    return count;
+    }
+    return temp;
   }
   
   /** Returns the value representing the day of the week for the first day of year,
