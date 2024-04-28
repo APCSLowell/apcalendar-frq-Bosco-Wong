@@ -14,11 +14,10 @@ public class APCalendar
   { 
     int temp = 0;
     for(int x= year1; x<= year2; x++){ //watch out for the greater equals
-    int count = 0;
     if(isLeapYear(x) == true){
-      count++;
-      temp = count;
+      temp++;
     }
+      return temp;
     }
     return temp;
   }
