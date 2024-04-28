@@ -19,6 +19,7 @@ public class APCalendar
       return count;
 
   }
+  }
   
   /** Returns the value representing the day of the week for the first day of year,
    *  where 0 denotes Sunday, 1 denotes Monday, ..., and 6 denotes Saturday.
@@ -61,3 +62,4 @@ public class APCalendar
     return (x % firstDayOfYear(year));
   }
 }
+
