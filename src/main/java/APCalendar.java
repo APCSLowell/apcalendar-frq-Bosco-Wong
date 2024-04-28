@@ -58,6 +58,6 @@ public class APCalendar
     int x = dayOfYear(month, day, year);
     if(isLeapYear(year))
       x++;
-    return x % firstDayOfYear(month,day,year);
+    return x % firstDayOfYear(year);
   }
 }
