@@ -1,7 +1,7 @@
 public class APCalendar
 {
   /** Returns true if year is a leap year and false otherwise. */
-  private static boolean isLeapYear(int year)
+ public static boolean isLeapYear(int year)
   {
     return year % 4 == 0 && (year % 100 != 0 || year % 400 == 0);
   }
@@ -23,7 +23,7 @@ public class APCalendar
   /** Returns the value representing the day of the week for the first day of year,
    *  where 0 denotes Sunday, 1 denotes Monday, ..., and 6 denotes Saturday.
    */
-  private static int firstDayOfYear(int year)
+  public static int firstDayOfYear(int year)
   {
     /* January 1, 1980 was a Tuesday */
       return (2 + 365*(year - 1980) + numberOfLeapYears(1980, year-1)) % 7;
@@ -58,6 +58,6 @@ public class APCalendar
     int x = dayOfYear(month, day, year);
     if(isLeapYear(year))
       x++;
-    return x % firstDayOfYear(year);
+    return (x % firstDayOfYear(year));
   }
 }
