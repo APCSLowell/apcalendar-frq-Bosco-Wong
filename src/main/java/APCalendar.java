@@ -57,7 +57,7 @@ public class APCalendar
   public static int dayOfWeek(int month, int day, int year)
   {
     int x = dayOfYear(month, day, year);
-    if(isLeapYear(year))
+    if(isLeapYear(year) == true)
       x++;
     return (x % firstDayOfYear(year));
   }
